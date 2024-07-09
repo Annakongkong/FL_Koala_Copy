@@ -10,6 +10,6 @@ jobs:
             - uses: agogear/chatgpt-pr-review@0.0.13
               with:
                   files: "*.tsx,*.py"
-                  openai_api_key: sk-proj-THrcdhXhSWvgDU5UmZYBT3BlbkFJCiVY6h6k2djIx47iM9Uz
+                  openai_api_key: ${{ secrets.OPENAI_API_KEY }}
                   github_token: ${{ secrets.GITHUB_TOKEN }}
                   github_pr_id: ${{ github.event.number }}
